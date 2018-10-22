@@ -1,0 +1,8 @@
+var express = require('express')
+var router = express.Router()
+
+router.get('/', (req, res, next) => {
+    var param = {"test": "ok"}
+    res.header('Content-Type', 'application/json; charset=utf-8')
+    res.send(param)
+})
